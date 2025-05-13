@@ -32,7 +32,7 @@
     "test": "jest --coverage",
     "test-watch": "jest --watch --coverage",
     "prepublishOnly": "pnpm clean && pnpm build",
-    "prepare": "npm clean && rollup -c rollup.config.ts --configPlugin typescript && cp -R dist/locale/. locale/ && cp dist/metar-taf-parser.js metar-taf-parser.js && npm clean:after",
+    "prepare": "npm run clean && rollup -c rollup.config.ts --configPlugin typescript && cp -R dist/locale/. locale/ && cp dist/metar-taf-parser.js metar-taf-parser.js && npm run clean:after",
     "upgrade:packageManager": "corepack use pnpm@latest"
   },
   "files": [
