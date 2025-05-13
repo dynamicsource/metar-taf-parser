@@ -32,6 +32,7 @@
     "test": "jest --coverage",
     "test-watch": "jest --watch --coverage",
     "prepublishOnly": "pnpm clean && pnpm build",
+    "prepare": "pnpm clean && pnpm build",
     "upgrade:packageManager": "corepack use pnpm@latest"
   },
   "files": [
